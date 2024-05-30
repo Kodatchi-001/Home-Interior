@@ -24,12 +24,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.674), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.674), rgba(0, 0, 0, 0));
 }
 
 header {
     width: 85%;
-    height: 10vh;
+    height: 9vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,9 @@ header {
     background-color: #CAC9C9;
 }
 
-.header-content-1,.header-content-2,.header-content-3{
+.header-content-1,
+.header-content-2,
+.header-content-3 {
     width: 33.3%;
     height: 100%;
     display: flex;
@@ -49,13 +51,13 @@ header {
     align-items: center;
 }
 
-.header-content-1{
+.header-content-1 {
     width: 32.5%;
     justify-content: start;
     margin-left: auto;
 }
 
-.header-content-3{
+.header-content-3 {
     justify-content: end;
 }
 
@@ -70,10 +72,27 @@ header ul li {
     list-style: none;
     font-weight: 400;
 }
-header ul li a{
+
+header ul li a {
     text-decoration: none;
     color: black;
+    position: relative;
 }
+
+header li a:after {
+    content: '';
+    position: absolute;
+    background-color: #004643;
+    width: 0%;
+    height: 3px;
+    display: block;
+    transition: 0.6s;
+}
+
+header a:hover:after {
+    width: 100%;
+}
+
 header h4 {
     width: 12vw;
     height: 75%;
@@ -87,18 +106,19 @@ header h4 {
     background-color: #004643;
 }
 
-.home-info{
+/*home-contnent*/
+.home-info {
     width: 55%;
-    height: 45%;
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: -15vh;
+    margin-top: -20vh;
     color: white;
 }
 
-.home-info h1{
+.home-info h1 {
     width: 90%;
     text-align: center;
     font-size: 4vw;
@@ -106,17 +126,19 @@ header h4 {
     text-transform: none;
 }
 
-.home-info p{
+.home-info p {
     width: 65%;
     text-transform: none;
     text-align: center;
 }
-.home-info div{
+
+.home-info div {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.home-info h4{
+
+.home-info h4 {
     width: 15vw;
     height: 7vh;
     display: flex;
@@ -127,8 +149,303 @@ header h4 {
     cursor: pointer;
     background-color: #004643;
 }
-.home-info i{
+
+.home-info i {
     rotate: 25deg;
     margin-left: 0.5vw;
     font-size: 1.2vw;
+}
+
+.content-navbar-responsiv,.icon-navbar-responsiv{
+    display: none;
+}
+/*navbar-responsiv*/
+@media only screen and (max-width: 900px) {
+    
+    body{
+        overflow: hidden;
+    }
+    .icon-navbar-responsiv {
+        display: block;
+        width: 48%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .icon-navbar-responsiv i{
+        font-size: 28px;
+    }
+
+    .content-navbar-responsiv{
+        width: 50%;
+        height: 100vh;
+        display: block flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: -150vw;
+        position: absolute;
+        z-index: 999;
+        backdrop-filter: blur(20px);
+        transition: 0.8s ease;
+    }
+    .card-content-navbar-responsiv{
+        width: 85%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .content-navbar-responsiv span{
+        width: 100%;
+        text-align: end;
+        color: white;
+    }
+
+    .content-navbar-responsiv span i{
+        font-size: 50px;
+    }
+    .navbar-links{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .navbar-links ul{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .navbar-links li{
+        width: 100%;
+        text-align: center;
+        list-style: none;
+    }
+    .navbar-links li a{
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+    }
+ 
+}
+
+/*smartphone*/
+@media only screen and (max-width: 600px) {
+    body{
+        overflow: hidden;
+    }
+    #home {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .home-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0));
+    }
+
+    header {
+        width: 85%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3vh;
+        padding-left: 0.8vw;
+        padding-right: 3vw;
+        border-radius: 50px;
+        background-color: #CAC9C9;
+    }
+
+    .header-content-2,
+    .header-content-3 {
+        display: none;
+    }
+
+    .header-content-1 {
+        width: 48%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    /*home-contnent*/
+    .home-info {
+        width: 90%;
+        height: 50%;
+        margin-top: -10vh;
+    }
+
+    .home-info h1 {
+        width: 100%;
+        font-size: 9vw;
+    }
+
+    .home-info p {
+        width: 85%;
+    }
+
+    .home-info div {
+        width: 100%;
+    }
+
+    .home-info h4 {
+        width: 50%;
+        height: 7vh;
+    }
+
+    .home-info i {
+        font-size: 3.5vw;
+    }
+
+}
+
+/*tablet*/
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    
+    #home {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .home-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0));
+    }
+
+    header {
+        width: 85%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3vh;
+        padding-left: 0.8vw;
+        padding-right: 3vw;
+        border-radius: 50px;
+        background-color: #CAC9C9;
+    }
+
+    .header-content-2,
+    .header-content-3 {
+        display: none;
+    }
+
+    .header-content-1 {
+        width: 48%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    /*home-contnent*/
+    .home-info {
+        width: 90%;
+        height: 50%;
+        margin-top: -10vh;
+    }
+
+    .home-info h1 {
+        width: 100%;
+        font-size: 7vw;
+    }
+
+    .home-info p {
+        width: 70%;
+    }
+
+    .home-info div {
+        width: 100%;
+    }
+
+    .home-info h4 {
+        width: 40%;
+        height: 7vh;
+    }
+
+    .home-info i {
+        font-size: 3vw;
+    }
+
+}
+/*tablet et pc portable*/
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    
+    #home {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .home-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0));
+    }
+/* 
+    header {
+        width: 85%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3vh;
+        padding-left: 0.8vw;
+        padding-right: 3vw;
+        border-radius: 50px;
+        background-color: #CAC9C9;
+    }
+
+    .header-content-2,
+    .header-content-3 {
+        display: none;
+    }
+
+    .header-content-1 {
+        width: 48%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    } */
+
+    /*home-contnent*/
+    .home-info {
+        width: 90%;
+        height: 50%;
+        margin-top: -10vh;
+    }
+
+    .home-info h1 {
+        width: 70%;
+        font-size: 5vw;
+    }
+
+    .home-info p {
+        width: 50%;
+    }
+
+    .home-info div {
+        width: 100%;
+    }
+
+    .home-info h4 {
+        width: 25%;
+        height: 7vh;
+    }
+
+    .home-info i {
+        font-size: 2vw;
+    }
 }
