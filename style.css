@@ -156,15 +156,142 @@ header h4 {
     font-size: 1.2vw;
 }
 
-.content-navbar-responsiv,.icon-navbar-responsiv{
+/*page-1*/
+#page-1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3vh;
+}
+
+.content-page-1 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tittle-page-1 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.tittle-page-1-1 {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tittle-page-1-1 h3 {
+    width: 100%;
+    text-transform: uppercase;
+    color: #004643;
+}
+
+.tittle-page-1-1 h1 {
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.tittle-page-1-1 p {
+    width: 95%;
+    font-weight: 600;
+    color: gray;
+}
+
+.cards-page-1 {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-content-page-1 {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-content-page-1 img {
+    width: 100%;
+    height: 90%;
+}
+
+.card-content-page-1 h3 {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content-navbar-responsiv,
+.icon-navbar-responsiv {
     display: none;
 }
+
+#page-2 {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-page-2 {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-card-page-2 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-card-page-2 div {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-card-page-2 h1 {
+    width: 100%;
+    text-align: center;
+    color: #004643;
+    font-size: 60px;
+}
+
+.content-card-page-2 h3 {
+    width: 100%;
+    text-align: center;
+    color: #004643;
+}
+
+.content-card-page-2 p {
+    width: 100%;
+    text-align: center;
+    color: #6e6e6e;
+}
+
 /*navbar-responsiv*/
 @media only screen and (max-width: 900px) {
-    
-    body{
-        overflow: hidden;
-    }
+
     .icon-navbar-responsiv {
         display: block;
         width: 48%;
@@ -174,10 +301,11 @@ header h4 {
         align-items: center;
     }
 
-    .icon-navbar-responsiv i{
-        font-size: 28px;
+    .icon-navbar-responsiv i {
+        font-size: 25px;
     }
 
+    /*
     .content-navbar-responsiv{
         width: 50%;
         height: 100vh;
@@ -234,14 +362,12 @@ header h4 {
         font-size: 30px;
         color: white;
     }
- 
+  */
 }
 
 /*smartphone*/
 @media only screen and (max-width: 600px) {
-    body{
-        overflow: hidden;
-    }
+
     #home {
         width: 100%;
         height: 100vh;
@@ -253,17 +379,16 @@ header h4 {
     }
 
     header {
-        width: 85%;
+        width: 100%;
         height: 8vh;
         display: flex;
         justify-content: center;
         align-items: center;
         justify-content: space-between;
-        margin-top: 3vh;
-        padding-left: 0.8vw;
-        padding-right: 3vw;
-        border-radius: 50px;
-        background-color: #CAC9C9;
+        margin-top: 0;
+        padding-left: 1.5vw;
+        padding-right: 3.5vw;
+        border-radius: 0px;
     }
 
     .header-content-2,
@@ -277,6 +402,7 @@ header h4 {
         display: flex;
         justify-content: start;
         align-items: center;
+        font-size: 15px;
     }
 
     /*home-contnent*/
@@ -300,7 +426,7 @@ header h4 {
     }
 
     .home-info h4 {
-        width: 50%;
+        width: 70%;
         height: 7vh;
     }
 
@@ -308,11 +434,114 @@ header h4 {
         font-size: 3.5vw;
     }
 
+    /*page-1*/
+    #page-1 {
+        width: 100%;
+        height: 100%;
+        margin-top: 3vh;
+    }
+
+    .content-page-1 {
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+    }
+
+    .tittle-page-1 {
+        width: 100%;
+        height: 20%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tittle-page-1-1 {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tittle-page-1-1 h3 {
+        width: 100%;
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .tittle-page-1-1 h1 {
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+    .tittle-page-1-1 p {
+        width: 85%;
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .cards-page-1 {
+        width: 90%;
+        height: 80%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card-content-page-1 {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-content-page-1 img {
+        width: 100%;
+        height: 60%;
+    }
+
+    .card-content-page-1 h3 {
+        width: 100%;
+        font-size: 5vw;
+        margin-top: 2vh;
+    }
+
+    /*page-2*/
+    #page-2 {
+        width: 100%;
+        height: 100%;
+        margin-top: 2vh;
+    }
+
+    .cards-page-2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .content-card-page-2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-card-page-2 div {
+        width: 50%;
+        height: 80%;
+    }
+
+    .content-card-page-2 h1 {
+        font-size: 60px;
+    }
+
+    .content-card-page-2 p {
+        width: 90%;
+    }
+
 }
 
 /*tablet*/
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-    
+
     #home {
         width: 100%;
         height: 100vh;
@@ -324,17 +553,12 @@ header h4 {
     }
 
     header {
-        width: 85%;
+        width: 100%;
         height: 8vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 3vh;
+        margin-top: 0;
         padding-left: 0.8vw;
         padding-right: 3vw;
-        border-radius: 50px;
-        background-color: #CAC9C9;
+        border-radius: 0px;
     }
 
     .header-content-2,
@@ -379,10 +603,115 @@ header h4 {
         font-size: 3vw;
     }
 
+    /*page-1*/
+    #page-1 {
+        width: 100%;
+        height: 100%;
+        margin-top: 3vh;
+    }
+
+    .content-page-1 {
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+    }
+
+    .tittle-page-1 {
+        width: 100%;
+        height: 20%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tittle-page-1-1 {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tittle-page-1-1 h3 {
+        width: 100%;
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .tittle-page-1-1 h1 {
+        font-size: 2vw;
+        font-weight: 600;
+    }
+
+    .tittle-page-1-1 p {
+        width: 85%;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .cards-page-1 {
+        width: 90%;
+        height: 80%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .card-content-page-1 {
+        width: 45%;
+        height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-content-page-1 img {
+        width: 100%;
+        height: 80%;
+    }
+
+    .card-content-page-1 h3 {
+        width: 100%;
+        height: 20%;
+        font-size: 3vw;
+        margin-top: 1vh;
+    }
+
+    /*page-2*/
+    #page-2 {
+        width: 100%;
+        height: 100%;
+        margin-top: 2vh;
+    }
+
+    .cards-page-2 {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .content-card-page-2 {
+        width: 40%;
+        height: 100%;
+    }
+
+    .content-card-page-2 div {
+        width: 100%;
+        height: 80%;
+    }
+
+    .content-card-page-2 h1 {
+        font-size: 60px;
+    }
+
+    .content-card-page-2 p {
+        width: 90%;
+    }
+
 }
+
 /*tablet et pc portable*/
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
-    
+
     #home {
         width: 100%;
         height: 100vh;
@@ -392,33 +721,6 @@ header h4 {
     .home-content {
         background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0));
     }
-/* 
-    header {
-        width: 85%;
-        height: 8vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 3vh;
-        padding-left: 0.8vw;
-        padding-right: 3vw;
-        border-radius: 50px;
-        background-color: #CAC9C9;
-    }
-
-    .header-content-2,
-    .header-content-3 {
-        display: none;
-    }
-
-    .header-content-1 {
-        width: 48%;
-        height: 100%;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-    } */
 
     /*home-contnent*/
     .home-info {
@@ -448,4 +750,24 @@ header h4 {
     .home-info i {
         font-size: 2vw;
     }
+
+    /*page-2*/
+    .content-card-page-2 div {
+        width: 100%;
+        height: 70%;
+    }
+    
+    .content-card-page-2 h1 {
+        font-size: 60px;
+    }
+    .content-card-page-2 h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-card-page-2 p {
+        width: 90%;
+        text-align: center;
+    }
+
 }
