@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -238,6 +239,7 @@ header h4 {
     display: none;
 }
 
+/*page-2*/
 #page-2 {
     width: 100%;
     height: 30vh;
@@ -265,28 +267,98 @@ header h4 {
 .content-card-page-2 div {
     width: 50%;
     height: 60%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .content-card-page-2 h1 {
-    width: 100%;
-    text-align: center;
     color: #004643;
     font-size: 60px;
 }
 
 .content-card-page-2 h3 {
-    width: 100%;
-    text-align: center;
     color: #004643;
 }
 
 .content-card-page-2 p {
-    width: 100%;
-    text-align: center;
     color: #6e6e6e;
+}
+
+/*page-3*/
+#page-3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-page-3 {
+    width: 82%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image-page-3,
+.content-page-3 {
+    width: 40%;
+    height: 85%;
+}
+
+.image-page-3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-page-3 {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.content-page-3 div {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-page-3 div h3 {
+    width: 100%;
+    color: #004643;
+    font-size: 1vw;
+}
+
+.content-page-3 div h1 {
+    width: 90%;
+    font-size: 2.5vw;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.content-page-3 div p {
+    width: 95%;
+}
+
+.content-page-3 div h5 {
+    width: 15vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    color: white;
+    background-color: #004643;
+}
+
+.content-page-3 div h5 i {
+    rotate: 25deg;
+    margin-left: 0.5vw;
+    font-size: 1.2vw;
+
 }
 
 /*navbar-responsiv*/
@@ -508,11 +580,12 @@ header h4 {
     #page-2 {
         width: 100%;
         height: 100%;
-        margin-top: 2vh;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
     }
 
     .cards-page-2 {
-        width: 100%;
+        width: 85%;
         height: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -520,21 +593,98 @@ header h4 {
     }
 
     .content-card-page-2 {
-        width: 100%;
+        width: 45%;
         height: 100%;
     }
 
     .content-card-page-2 div {
-        width: 50%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .content-card-page-2 h1 {
         font-size: 60px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-card-page-2 h3 {
+        width: 100%;
+        text-align: center;
     }
 
     .content-card-page-2 p {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*page-3*/
+    #page-3 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cards-page-3 {
         width: 90%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .image-page-3,
+    .content-page-3 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .image-page-3 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-page-3 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .content-page-3 div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .content-page-3 div h3 {
+        width: 100%;
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .content-page-3 div h1 {
+        width: 80%;
+        font-size: 3.5vw;
+        text-align: center;
+    }
+
+    .content-page-3 div p {
+        width: 85%;
+        text-align: center;
+    }
+
+    .content-page-3 div h5 {
+        width: 70%;
+        height: 7vh;
+        margin-top: 2vh;
+    }
+
+    .content-page-3 div h5 i {
+        font-size: 3.5vw;
     }
 
 }
@@ -678,7 +828,7 @@ header h4 {
     #page-2 {
         width: 100%;
         height: 100%;
-        margin-top: 2vh;
+        margin-bottom: 4vh;
     }
 
     .cards-page-2 {
@@ -697,20 +847,97 @@ header h4 {
     .content-card-page-2 div {
         width: 100%;
         height: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .content-card-page-2 h1 {
+        width: 100%;
+        text-align: center;
         font-size: 60px;
+    }
+
+    .content-card-page-2 h3 {
+        width: 100%;
+        text-align: center;
     }
 
     .content-card-page-2 p {
         width: 90%;
+        text-align: center;
+    }
+
+    /*page-3*/
+    #page-3 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cards-page-3 {
+        width: 90%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .image-page-3,
+    .content-page-3 {
+        width: 90%;
+        height: 50%;
+    }
+
+    .image-page-3 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-page-3 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .content-page-3 div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .content-page-3 div h3 {
+        width: 100%;
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .content-page-3 div h1 {
+        width: 65%;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .content-page-3 div p {
+        width: 85%;
+        text-align: center;
+    }
+
+    .content-page-3 div h5 {
+        width: 45%;
+        height: 7vh;
+        margin-top: 2vh;
+    }
+
+    .content-page-3 div h5 i {
+        font-size: 3.5vw;
     }
 
 }
 
 /*tablet et pc portable*/
-@media only screen and (min-width: 901px) and (max-width: 1200px) {
+@media only screen and (min-width: 901px) and (max-width: 1280px) {
 
     #home {
         width: 100%;
@@ -753,21 +980,28 @@ header h4 {
 
     /*page-2*/
     .content-card-page-2 div {
-        width: 100%;
+        width: 80%;
         height: 70%;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
     }
-    
+
     .content-card-page-2 h1 {
         font-size: 60px;
-    }
-    .content-card-page-2 h3 {
         width: 100%;
-        text-align: center;
     }
 
     .content-card-page-2 p {
         width: 90%;
-        text-align: center;
     }
 
+    /*page-3*/
+    .content-page-3 div h3 {
+        font-size: 2vw;
+    }
+    .content-page-3 div h5 {
+        width: 20vw;
+        height: 7vh;
+    }
 }
