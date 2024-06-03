@@ -358,7 +358,86 @@ header h4 {
     rotate: 25deg;
     margin-left: 0.5vw;
     font-size: 1.2vw;
+}
 
+/*page-4*/
+#page-4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-page-4 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tittle-page-4 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.tittle-page-4-1 {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tittle-page-4-1 h3 {
+    width: 100%;
+    text-transform: uppercase;
+    color: #004643;
+}
+
+.tittle-page-4-1 h1 {
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.tittle-page-4-1 p {
+    width: 90%;
+    height: 80%;
+    font-weight: 600;
+    color: gray;
+    margin-top: auto;
+}
+
+.cards-page-4 {
+    width: 92%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cards-page-4-1,
+.cards-page-4-2 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards-page-4-1 img {
+    width: 95%;
+    height: 100%;
+}
+
+.cards-page-4-2 img {
+    width: 95%;
+    height: 48%;
 }
 
 /*navbar-responsiv*/
@@ -580,8 +659,8 @@ header h4 {
     #page-2 {
         width: 100%;
         height: 100%;
-        margin-top: 4vh;
-        margin-bottom: 4vh;
+        margin-top: 7vh;
+        margin-bottom: 7vh;
     }
 
     .cards-page-2 {
@@ -630,7 +709,8 @@ header h4 {
     .cards-page-3 {
         width: 90%;
         height: 100%;
-        flex-wrap: wrap;
+        gap: 20px;
+        flex-wrap: wrap-reverse;
     }
 
     .image-page-3,
@@ -685,6 +765,79 @@ header h4 {
 
     .content-page-3 div h5 i {
         font-size: 3.5vw;
+    }
+
+    /*page-4*/
+    #page-4 {
+        width: 100%;
+        height: 100%;
+        margin-top: 2vh;
+    }
+
+    .content-page-4 {
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+    }
+
+    .tittle-page-4 {
+        width: 100%;
+        height: 20%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tittle-page-4-1 {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tittle-page-4-1 h3 {
+        width: 100%;
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .tittle-page-4-1 h1 {
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+    .tittle-page-4-1 p {
+        width: 80%;
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .cards-page-4 {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .cards-page-4-1,
+    .cards-page-4-2 {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .cards-page-4-1 img {
+        display: none;
+    }
+
+    .cards-page-4-2 img {
+        width: 100%;
+        height: 50%;
     }
 
 }
@@ -877,7 +1030,8 @@ header h4 {
     .cards-page-3 {
         width: 90%;
         height: 100%;
-        flex-wrap: wrap;
+        gap: 20px;
+        flex-wrap: wrap-reverse;
     }
 
     .image-page-3,
@@ -932,6 +1086,82 @@ header h4 {
 
     .content-page-3 div h5 i {
         font-size: 3.5vw;
+    }
+
+    /*page-4*/
+    #page-4 {
+        width: 100%;
+        height: 100%;
+        margin-top: 3vh;
+    }
+
+    .content-page-4 {
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+    }
+
+    .tittle-page-4 {
+        width: 100%;
+        height: 20%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tittle-page-4-1 {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tittle-page-4-1 h3 {
+        width: 100%;
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .tittle-page-4-1 h1 {
+        font-size: 2vw;
+        font-weight: 600;
+    }
+
+    .tittle-page-4-1 p {
+        width: 75%;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .cards-page-4 {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap-reverse;
+    }
+
+    .cards-page-4-1,
+    .cards-page-4-2 {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+    .cards-page-4-1 img {
+        width: 100%;
+        height: 40vh;
+        display: none;
+    }
+
+    .cards-page-4-2 img {
+        width: 100%;
+        height: 50%;
     }
 
 }
@@ -993,15 +1223,30 @@ header h4 {
     }
 
     .content-card-page-2 p {
-        width: 90%;
+        width: 100%;
     }
 
     /*page-3*/
     .content-page-3 div h3 {
         font-size: 2vw;
     }
+
     .content-page-3 div h5 {
         width: 20vw;
         height: 7vh;
+    }
+
+    /*page-4*/
+    .tittle-page-4-1 p {
+        width: 100%;
+    }
+}
+
+/*pc portable*/
+@media only screen and (min-width: 1281px) and (max-width: 1350px) {
+
+    .content-card-page-2 div {
+        width: 70%;
+        height: 60%;
     }
 }
