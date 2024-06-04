@@ -530,6 +530,117 @@ header h4 {
     font-size: 1.3vw;
 }
 
+/*page-6*/
+#page-6 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-page-6 {
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.tittle-page-6 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.374);
+}
+
+.tittle-page-6 h1 {
+    width: 50%;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: none;
+}
+
+.tittle-page-6 div {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 2px;
+}
+
+.tittle-page-6 div i {
+    width: 13%;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 2px solid;
+    border-radius: 50%;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.cards-page-6 {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    transition: 0.8s ease;
+}
+
+.card-page-6 {
+    min-width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-content-page-6 {
+    width: 38%;
+    height: 100%;
+}
+
+.card-content-page-6 img {
+    width: 100%;
+    height: 60%;
+}
+
+.card-content-page-6-info {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.374);
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.575);
+    font-weight: 800;
+}
+
+.card-content-page-6-util {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-content-page-6-util i {
+    width: 3vw;
+    height: 50%;
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
 /*navbar-responsiv*/
 @media only screen and (max-width: 900px) {
 
@@ -997,6 +1108,94 @@ header h4 {
         font-size: 5vw;
     }
 
+    /*page-6*/
+    #page-6 {
+        width: 100%;
+        height: 100%;
+        margin-top: 2vh;
+    }
+
+    .content-page-6 {
+        width: 90%;
+        height: 100%;
+        gap: 30px;
+    }
+
+    .tittle-page-6 {
+        width: 100%;
+        height: 30%;
+        flex-wrap: wrap;
+        padding-bottom: 2vh;
+        gap: 5px;
+    }
+
+    .tittle-page-6 h1 {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .tittle-page-6 div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .tittle-page-6 div i {
+        width: 14%;
+        height: 5vh;
+    }
+
+    .cards-page-6 {
+        width: 100%;
+        height: 70%;
+    }
+
+    .card-page-6 {
+        min-width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .card-content-page-6 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .card-content-page-6 img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .card-content-page-6-info {
+        width: 100%;
+        height: 22%;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .card-content-page-6-info p {
+        width: 100%;
+    }
+
+    .card-content-page-6-util {
+        width: 100%;
+        height: 20%;
+        gap: 15px;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .card-content-page-6-util i {
+        width: 10vw;
+        height: 4vh;
+        font-size: 25px;
+    }
+
 }
 
 /*tablet*/
@@ -1388,6 +1587,95 @@ header h4 {
         font-size: 3vw;
     }
 
+    /*page-6*/
+    #page-6 {
+        width: 100%;
+        height: 100%;
+        margin-top: 2vh;
+    }
+
+    .content-page-6 {
+        width: 90%;
+        height: 100%;
+        gap: 30px;
+    }
+
+    .tittle-page-6 {
+        width: 100%;
+        height: 30%;
+        flex-wrap: wrap;
+        padding-bottom: 2vh;
+        gap: 5px;
+    }
+
+    .tittle-page-6 h1 {
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .tittle-page-6 div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .tittle-page-6 div i {
+        width: 10%;
+        height: 7vh;
+    }
+
+    .cards-page-6 {
+        width: 100%;
+        height: 70%;
+    }
+
+    .card-page-6 {
+        min-width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .card-content-page-6 {
+        width: 40%;
+        height: 50%;
+    }
+
+    .card-content-page-6 img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .card-content-page-6-info {
+        width: 100%;
+        height: 22%;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .card-content-page-6-info p {
+        width: 100%;
+    }
+
+    .card-content-page-6-util {
+        width: 100%;
+        height: 20%;
+        gap: 15px;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .card-content-page-6-util i {
+        width: 6vw;
+        height: 6vh;
+        font-size: 25px;
+        
+    }
+
 }
 
 /*tablet et pc portable*/
@@ -1471,6 +1759,7 @@ header h4 {
         width: 50%;
         color: white;
     }
+
     #button-page-5-1,
     #button-page-5-2 {
         height: 75%;
@@ -1498,11 +1787,34 @@ header h4 {
         margin-left: 0.5vw;
         font-size: 1.5vw;
     }
+
+    /*page-6*/
+    .tittle-page-6 h1 {
+        width: 70%;
+    }
+
+    .tittle-page-6 div i {
+        width: 20%;
+        height: 33%;
+    }
+    .card-content-page-6 {
+        width: 45%;
+        height: 100%;
+    }
+
+    .card-content-page-6-info {
+        font-size: 15px;
+    }
+    .card-content-page-6-util i {
+        width: 5vw;
+        height: 50%;
+    }
+
 }
 
 /*pc portable*/
 @media only screen and (min-width: 1281px) and (max-width: 1350px) {
-
+    /*page-2*/
     .content-card-page-2 div {
         width: 70%;
         height: 60%;
