@@ -1329,7 +1329,7 @@ header h4 {
 
     .tittle-page-7 {
         width: 100%;
-        height: 100%;
+        height: 50%;
     }
 
     .tittle-content-page-7 {
@@ -1362,39 +1362,26 @@ header h4 {
 
     .cards-page-7 {
         width: 100%;
-        height: 75%;
+        height: 50vh;
+        justify-content: center;
+        gap: 10px;
     }
 
     .card-content-page-7 {
         width: 100%;
-        height: 10vh;
+        height: 22%;
     }
 
     .card-content-quetion-page-7 {
         width: 90%;
         height: 100%;
-        transition: 5s;
-    }
-
-    .card-content-quetion-page-7 h3:last-child {
-        width: 90%;
-        font-size: 18px;
-    }
-
-    .card-content-page-7 i {
-        width: 10%;
-        height: 100%;
-        justify-content: center;
-        font-size: 30px;
     }
 
     .card-content-page-7 p {
-        width: 90%;
-        height: 50%;
-        font-size: 14px;
+        width: 100%;
+        font-size: 12px;
         margin-left: 8vw;
     }
-
 }
 
 /*tablet*/
@@ -1875,89 +1862,6 @@ header h4 {
         font-size: 25px;
 
     }
-
-    /*page-7*/
-    #page-7 {
-        width: 100%;
-        height: 100%;
-        margin-top: 5vh;
-    }
-
-    .content-page-7 {
-        width: 90%;
-        height: 100%;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .tittle-page-7 {
-        width: 100%;
-        height: 100%;
-    }
-
-    .tittle-content-page-7 {
-        width: 100%;
-        height: 45%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .tittle-content-page-7 h3 {
-        width: 100%;
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .tittle-content-page-7 h1 {
-        width: 95%;
-        text-align: center;
-    }
-
-    .tittle-content-page-7 h4 {
-        width: 40%;
-        height: 7vh;
-    }
-
-    .tittle-content-page-7 i {
-        font-size: 3vw;
-    }
-
-    .cards-page-7 {
-        width: 100%;
-        height: 75%;
-    }
-
-    .card-content-page-7 {
-        width: 100%;
-        height: 10vh;
-    }
-
-    .card-content-quetion-page-7 {
-        width: 90%;
-        height: 100%;
-        transition: 5s;
-    }
-
-    .card-content-quetion-page-7 h3:last-child {
-        width: 90%;
-        font-size: 18px;
-    }
-
-    .card-content-page-7 i {
-        width: 10%;
-        height: 100%;
-        justify-content: center;
-        font-size: 30px;
-    }
-
-    .card-content-page-7 p {
-        width: 90%;
-        height: 50%;
-        font-size: 14px;
-        margin-left: 8vw;
-    }
-
 }
 
 /*tablet et pc portable*/
@@ -2130,16 +2034,18 @@ header h4 {
         width: 100%;
         height: 16%;
     }
+
     .card-content-quetion-page-7 {
         width: 90%;
     }
+
     .card-content-page-7 p {
         width: 90%;
         height: 50%;
         font-size: 14px;
         margin-left: 5vw;
     }
-    
+
 }
 
 /*pc portable*/
@@ -2174,6 +2080,7 @@ header h4 {
         width: 12%;
         height: 45%;
     }
+
     /*page-7*/
     .card-content-quetion-page-7 {
         width: 90%;

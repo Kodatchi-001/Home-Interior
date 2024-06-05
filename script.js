@@ -53,7 +53,7 @@ function moveSlide(direction) {
 //cards-question
 function cards_question() {
     var all_cards = document.querySelectorAll('.card-content-page-7');
-    var size = '25%'; 
+    var size = '28%';
     var height = '50%';
     var currentElement = null; 
 
