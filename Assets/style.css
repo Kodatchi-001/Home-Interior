@@ -737,7 +737,7 @@ header h4 {
     transition: 0.8s ease;
 }
 
-.card-content-quetion-page-7 div{
+.card-content-quetion-page-7 div {
     width: 90%;
     height: 100%;
     display: flex;
@@ -767,6 +767,198 @@ header h4 {
     font-size: 14px;
     margin-left: 4vw;
     font-weight: 800;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 100vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #011b19;
+    color: white;
+}
+
+.content-footer {
+    width: 85%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    gap: 10px;
+}
+
+/*parti-footer-1*/
+.content-footer-1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.content-footer-1:first-child {
+    height: 41%;
+    padding-bottom: 5vh;
+}
+
+.content-tittle-footer {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-footer-1 div h4 {
+    width: 100%;
+}
+
+.content-footer-1 div h1 {
+    width: 100%;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.content-footer-1 h4:last-child {
+    width: 17vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #004643;
+}
+
+.content-footer-1 h4 i {
+    rotate: 45deg;
+    margin-left: 0.5vw;
+    font-size: 1.3vw;
+}
+
+/*parti-footer-2*/
+.content-footer-1:last-child {
+    align-items: start;
+    gap: 5px;
+}
+
+.content-info-footer-1 {
+    width: 23%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-info-footer-1 h2 {
+    width: 100%;
+}
+
+.content-info-footer-1 p {
+    width: 100%;
+    font-size: 1.2vw;
+    color: rgb(205, 205, 205);
+}
+
+#footer-div {
+    width: 15%;
+    height: 60%;
+    justify-content: center;
+}
+
+#footer-div h2,
+#footer-div p {
+    width: 80%;
+    margin-left: auto;
+}
+
+#footer-link {
+    justify-content: center;
+}
+
+#footer-link h2 {
+    text-align: center;
+}
+
+.content-info-footer-1 ul {
+    width: 73%;
+    margin-top: auto;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.content-info-footer-1 li {
+    width: 100%;
+    list-style: none;
+}
+
+.content-info-footer-1 li a {
+    text-decoration: none;
+    color: rgb(205, 205, 205);
+    font-size: 1.4vw;
+}
+
+#footer-email {
+    width: 35%;
+    height: 100%;
+}
+
+#footer-email h2 {
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+#footer-email p {
+    width: 70%;
+    font-size: 1vw;
+}
+
+#footer-email form {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(205, 205, 205, 0.537);
+}
+
+#footer-email form input {
+    width: 60%;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.1vw;
+    color: rgb(255, 255, 255);
+}
+
+#footer-email form input::placeholder {
+    color: rgb(209, 209, 209);
+}
+
+#footer-email form input:last-child {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #004643;
+}
+
+.info-footer {
+    width: 85%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: #cac9c9bb;
 }
 
 /*navbar-responsiv*/
@@ -1390,21 +1582,167 @@ header h4 {
         width: 100%;
         height: 100%;
     }
-    .card-content-quetion-page-7 div{
+
+    .card-content-quetion-page-7 div {
         width: 90%;
     }
-    .card-content-quetion-page-7 h3:last-child{
+
+    .card-content-quetion-page-7 h3:last-child {
         width: 90%;
         font-size: 16px;
     }
+
     .card-content-page-7 p {
         width: 100%;
         font-size: 11.5px;
         margin-left: 8vw;
     }
-    .card-content-page-7 i{
+
+    .card-content-page-7 i {
         width: 10%;
         justify-content: center;
+    }
+
+    /*footer*/
+    footer {
+        width: 100%;
+        height: 100%;
+        margin-top: 15vh;
+        gap: 15px;
+    }
+
+    .content-footer {
+        width: 90%;
+        height: 90%;
+        gap: 0px;
+    }
+
+    /*parti-footer-1*/
+    .content-footer-1 {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .content-tittle-footer {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-top: 2vh;
+    }
+
+    .content-footer-1 div h4 {
+        width: 100%;
+    }
+
+    .content-footer-1 div h1 {
+        width: 100%;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .content-footer-1 h4:last-child {
+        width: 80%;
+        height: 6vh;
+    }
+
+    .content-footer-1 h4 i {
+        font-size: 4vw;
+    }
+
+    /*parti-footer-2*/
+    .content-footer-1:last-child {
+        gap: 10px;
+    }
+
+    .content-info-footer-1 {
+        width: 100%;
+        height: 85%;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .content-info-footer-1 h2 {
+        width: 100%;
+        font-size: 6vw;
+    }
+
+    .content-info-footer-1 p {
+        width: 75%;
+        font-size: 3vw;
+    }
+
+    #footer-div {
+        width: 100%;
+    }
+
+    #footer-div h2,
+    #footer-div p {
+        width: 100%;
+    }
+
+    #footer-link h2 {
+        text-align: center;
+    }
+
+    .content-info-footer-1 ul {
+        width: 100%;
+        display: flex;
+    }
+
+    .content-info-footer-1 li a {
+        font-size: 4vw;
+    }
+
+    #footer-email {
+        width: 100%;
+    }
+
+    #footer-email h2 {
+        font-size: 6vw;
+    }
+
+    #footer-email p {
+        width: 60%;
+        font-size: 3vw;
+    }
+
+    #footer-email form {
+        width: 100%;
+        height: 30%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 4vh;
+        gap: 20px;
+        padding-bottom: 2vh;
+    }
+
+    #footer-email form input {
+        width: 80%;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    #footer-email form input:last-child {
+        width: 60%;
+        height: 6vh;
+    }
+
+    .info-footer {
+        width: 85%;
+        height: 10%;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .info-footer h4 {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -1886,7 +2224,7 @@ header h4 {
         font-size: 25px;
 
     }
-    
+
     /*page-7*/
     #page-7 {
         width: 100%;
@@ -1950,16 +2288,167 @@ header h4 {
         width: 100%;
         height: 100%;
     }
-    .card-content-quetion-page-7 div{
+
+    .card-content-quetion-page-7 div {
         width: 90%;
     }
-    .card-content-quetion-page-7 h3{
+
+    .card-content-quetion-page-7 h3 {
         font-size: 20px;
     }
+
     .card-content-page-7 p {
         width: 100%;
         font-size: 15px;
         margin-left: 8vw;
+    }
+
+    /*footer*/
+    footer {
+        width: 100%;
+        height: 100%;
+        margin-top: 15vh;
+        gap: 15px;
+    }
+
+    .content-footer {
+        width: 80%;
+        height: 90%;
+        gap: 0px;
+    }
+
+    /*parti-footer-1*/
+    .content-footer-1 {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .content-tittle-footer {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-top: 2vh;
+    }
+
+    .content-footer-1 div h4 {
+        width: 100%;
+    }
+
+    .content-footer-1 div h1 {
+        width: 100%;
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .content-footer-1 h4:last-child {
+        width: 50%;
+        height: 6vh;
+    }
+
+    .content-footer-1 h4 i {
+        font-size: 3vw;
+    }
+
+    /*parti-footer-2*/
+    .content-footer-1:last-child {
+        gap: 10px;
+    }
+
+    .content-info-footer-1 {
+        width: 47%;
+        height: 85%;
+        justify-content: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .content-info-footer-1 h2 {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .content-info-footer-1 p {
+        width: 100%;
+        font-size: 2vw;
+    }
+
+    #footer-div {
+        width: 50%;
+        height: 50%;
+    }
+
+    #footer-div h2,
+    #footer-div p {
+        width: 100%;
+    }
+
+    #footer-link h2 {
+        text-align: center;
+    }
+
+    .content-info-footer-1 ul {
+        width: 100%;
+        display: flex;
+    }
+
+    .content-info-footer-1 li {
+        width: 50%;
+    }
+
+    .content-info-footer-1 li a {
+        font-size: 3vw;
+    }
+
+    #footer-email {
+        width: 50%;
+    }
+
+    #footer-email h2 {
+        font-size: 5vw;
+    }
+
+    #footer-email p {
+        width: 100%;
+        font-size: 2vw;
+    }
+
+    #footer-email form {
+        width: 100%;
+        height: 30%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 4vh;
+        gap: 15px;
+        padding-bottom: 2vh;
+        border: 0;
+    }
+
+    #footer-email form input {
+        width: 80%;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    #footer-email form input:last-child {
+        width: 60%;
+        height: 6vh;
+    }
+
+    .info-footer {
+        width: 85%;
+        height: 10%;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .info-footer h4 {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -2137,16 +2626,31 @@ header h4 {
     .card-content-quetion-page-7 {
         width: 100%;
     }
-    .card-content-quetion-page-7 div{
+
+    .card-content-quetion-page-7 div {
         width: 90%;
     }
+
     .card-content-page-7 p {
         width: 90%;
         height: 50%;
         font-size: 14px;
         margin-left: 5vw;
     }
+
+    /*footer*/
+    .content-footer-1 div h1 {
+        width: 100%;
+        font-size: 35px;
+        font-weight: 600;
+    }
     
+    .content-footer-1 h4:last-child {
+        width: 30%;
+    }
+    .content-footer-1 h4 i{
+        font-size: 2.5vw;
+    }
 }
 
 /*pc portable*/
@@ -2186,7 +2690,8 @@ header h4 {
     .card-content-quetion-page-7 {
         width: 100%;
     }
-    .card-content-quetion-page-7 div{
+
+    .card-content-quetion-page-7 div {
         width: 90%;
     }
 }
