@@ -75,7 +75,6 @@ function cards_question() {
                 this.style.height = '';
                 this.style.alignItems = ''
                 icon.style.transform = ''; 
-                icon.style.height = ''; 
                 icon.style.color = ''; 
                 tittles.style.height = '';
             } else {
@@ -84,14 +83,12 @@ function cards_question() {
                     currentElement.alignItems = ''
                     tittles.style.height = '';
                     currentElement.querySelector('.bx-chevron-down').style.transform = '';
-                    icon.style.height = ''; 
-                    icon.style.color = ''; 
+                    icon.style.color = '' 
                 }
                 this.style.height = size;
                 this.style.alignItems = 'start'
                 
                 icon.style.transform = 'rotate(180deg)';
-                icon.style.height = height;
                 icon.style.color = 'black';  
                 
                 tittles.style.height = height;

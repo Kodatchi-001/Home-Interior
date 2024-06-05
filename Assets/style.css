@@ -8,6 +8,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     text-transform: capitalize;
+    user-select: none;
 }
 
 #home {
@@ -728,12 +729,20 @@ header h4 {
 }
 
 .card-content-quetion-page-7 {
-    width: 95%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.8s ease;
+}
+
+.card-content-quetion-page-7 div{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card-content-quetion-page-7 h3:last-child {
@@ -743,8 +752,10 @@ header h4 {
 }
 
 .card-content-page-7 i {
+    width: 10%;
     height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 30px;
     transition: 0.8s ease;
@@ -755,6 +766,7 @@ header h4 {
     height: 50%;
     font-size: 14px;
     margin-left: 4vw;
+    font-weight: 800;
 }
 
 /*navbar-responsiv*/
@@ -1264,6 +1276,7 @@ header h4 {
         width: 15%;
         height: 6vh;
         font-size: 40px;
+        border-radius: 5px;
     }
 
     .cards-page-6 {
@@ -1311,6 +1324,7 @@ header h4 {
         width: 10%;
         height: 4.2vh;
         font-size: 25px;
+        border-radius: 5px;
     }
 
     /*page-7*/
@@ -1352,12 +1366,12 @@ header h4 {
     }
 
     .tittle-content-page-7 h4 {
-        width: 50%;
+        width: 70%;
         height: 7vh;
     }
 
     .tittle-content-page-7 i {
-        font-size: 3vw;
+        font-size: 6vw;
     }
 
     .cards-page-7 {
@@ -1369,18 +1383,28 @@ header h4 {
 
     .card-content-page-7 {
         width: 100%;
-        height: 22%;
+        height: 21%;
     }
 
     .card-content-quetion-page-7 {
-        width: 90%;
+        width: 100%;
         height: 100%;
     }
-
+    .card-content-quetion-page-7 div{
+        width: 90%;
+    }
+    .card-content-quetion-page-7 h3:last-child{
+        width: 90%;
+        font-size: 16px;
+    }
     .card-content-page-7 p {
         width: 100%;
-        font-size: 12px;
+        font-size: 11.5px;
         margin-left: 8vw;
+    }
+    .card-content-page-7 i{
+        width: 10%;
+        justify-content: center;
     }
 }
 
@@ -1862,6 +1886,81 @@ header h4 {
         font-size: 25px;
 
     }
+    
+    /*page-7*/
+    #page-7 {
+        width: 100%;
+        height: 100%;
+        margin-top: 5vh;
+    }
+
+    .content-page-7 {
+        width: 90%;
+        height: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .tittle-page-7 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .tittle-content-page-7 {
+        width: 100%;
+        height: 45%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .tittle-content-page-7 h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .tittle-content-page-7 h1 {
+        width: 95%;
+        text-align: center;
+    }
+
+    .tittle-content-page-7 h4 {
+        width: 40%;
+        height: 7vh;
+    }
+
+    .tittle-content-page-7 i {
+        font-size: 3vw;
+    }
+
+    .cards-page-7 {
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card-content-page-7 {
+        width: 100%;
+        height: 21%;
+    }
+
+    .card-content-quetion-page-7 {
+        width: 100%;
+        height: 100%;
+    }
+    .card-content-quetion-page-7 div{
+        width: 90%;
+    }
+    .card-content-quetion-page-7 h3{
+        font-size: 20px;
+    }
+    .card-content-page-7 p {
+        width: 100%;
+        font-size: 15px;
+        margin-left: 8vw;
+    }
 }
 
 /*tablet et pc portable*/
@@ -2036,16 +2135,18 @@ header h4 {
     }
 
     .card-content-quetion-page-7 {
+        width: 100%;
+    }
+    .card-content-quetion-page-7 div{
         width: 90%;
     }
-
     .card-content-page-7 p {
         width: 90%;
         height: 50%;
         font-size: 14px;
         margin-left: 5vw;
     }
-
+    
 }
 
 /*pc portable*/
@@ -2083,6 +2184,9 @@ header h4 {
 
     /*page-7*/
     .card-content-quetion-page-7 {
+        width: 100%;
+    }
+    .card-content-quetion-page-7 div{
         width: 90%;
     }
 }
