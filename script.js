@@ -54,13 +54,7 @@ function moveSlide(direction) {
 function cards_question() {
     var all_cards = document.querySelectorAll('.card-content-page-7');
     var size = '25%'; 
-    var height ;
-    if (window.innerWidth <= 1400) {
-        height = '18%'
-    }
-    if (window.innerWidth <= 1024) {
-        height = '10vh'
-    }
+    var height = '50%';
     var currentElement = null; 
 
     all_cards.forEach(function(element) {
@@ -95,8 +89,7 @@ function cards_question() {
                 }
                 this.style.height = size;
                 this.style.alignItems = 'start'
-                this.style.transition = '2s'
-
+                
                 icon.style.transform = 'rotate(180deg)';
                 icon.style.height = height;
                 icon.style.color = 'black';  
