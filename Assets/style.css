@@ -914,7 +914,7 @@ footer {
     }
 
     .icon-navbar-responsiv i {
-        font-size: 25px;
+        font-size: 28px;
     }
     .home-info {
         width: 90%;
@@ -923,15 +923,15 @@ footer {
         margin-bottom: auto;
     }
     header {
-        width: 100%;
+        width: 96%;
         height: 9vh;
         display: flex;
         justify-content: center;
         align-items: center;
         justify-content: space-between;
         margin-top: 0;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 2vw;
+        padding-right: 2vw;
         border-radius: 0px;
         flex-wrap: wrap;
         overflow: hidden;
@@ -953,7 +953,7 @@ footer {
         display: flex;
         justify-content: start;
         align-items: center;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .icon-navbar-responsiv {
@@ -1007,7 +1007,7 @@ footer {
     .home-content {
         background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0));
     }
-
+   
     /*home-contnent*/
     .home-info {
         width: 90%;
