@@ -1,17 +1,22 @@
 //navbar-responsiv
-const navbarcontent = document.querySelector('.content-navbar-responsiv');
-const navbarcontent_link = document.querySelectorAll('.content-navbar-responsiv a')
-
-function navbar_content_left() {
-    navbarcontent.style.marginRight = '-50vw'
-    navbarcontent_link.forEach(link => {
-        link.addEventListener('click', function () {
-            navbarcontent.style.marginRight = '-150vw'
-        })
-    })
+var log_navbar = document.querySelector('.header-content-1');
+var icone_navbar = document.querySelector('.icon-navbar-responsiv');
+function navbar_top(icone) {
+    document.querySelector('header').style.height = '50vh';
+    log_navbar.style.height = '20%';
+    icone.parentNode.parentNode.style.height = '20%'
+    navbarcontent_link()
 }
-function navbar_content_right() {
-    navbarcontent.style.marginRight = '-150vw'
+
+function navbarcontent_link() {
+    const navbarcontent_link = document.querySelectorAll('.content-navbar-responsiv a')
+    navbarcontent_link.forEach(element => {
+        element.addEventListener('click', function () {
+            document.querySelector('header').style.height = '9vh'
+            log_navbar.style.height = '';
+            icone_navbar.style.height = ''
+        })
+    });
 }
 
 //card-information
@@ -55,27 +60,27 @@ function cards_question() {
     var all_cards = document.querySelectorAll('.card-content-page-7');
     var size = '28%';
     var height = '50%';
-    var currentElement = null; 
+    var currentElement = null;
 
-    all_cards.forEach(function(element) {
-        element.addEventListener('click', function() {
-            var icon = this.querySelector('.bx-chevron-down'); 
+    all_cards.forEach(function (element) {
+        element.addEventListener('click', function () {
+            var icon = this.querySelector('.bx-chevron-down');
             var tittles = this.querySelector(".card-content-quetion-page-7")
-            
+
             if (currentElement && currentElement !== this) {
                 currentElement.style.height = '';
                 currentElement.style.alignItems = '';
                 var currentIcon = currentElement.querySelector('.bx-chevron-down');
                 var currentTitles = currentElement.querySelector(".card-content-quetion-page-7");
                 currentIcon.style.transform = '';
-                currentIcon.style.color = ''; 
+                currentIcon.style.color = '';
                 currentTitles.style.height = '';
             }
             if (this.style.height == size) {
                 this.style.height = '';
                 this.style.alignItems = ''
-                icon.style.transform = ''; 
-                icon.style.color = ''; 
+                icon.style.transform = '';
+                icon.style.color = '';
                 tittles.style.height = '';
             } else {
                 if (currentElement) {
@@ -83,16 +88,16 @@ function cards_question() {
                     currentElement.alignItems = ''
                     tittles.style.height = '';
                     currentElement.querySelector('.bx-chevron-down').style.transform = '';
-                    icon.style.color = '' 
+                    icon.style.color = ''
                 }
                 this.style.height = size;
                 this.style.alignItems = 'start'
-                
+
                 icon.style.transform = 'rotate(180deg)';
-                icon.style.color = 'black';  
-                
+                icon.style.color = 'black';
+
                 tittles.style.height = height;
-                currentElement = this; 
+                currentElement = this;
             }
         });
     });
