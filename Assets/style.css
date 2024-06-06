@@ -939,7 +939,9 @@ footer {
         z-index: 999;
         position: absolute;
     }
-
+    header-size{
+        height: 50vh;
+    } 
     .header-content-2,
     .header-content-3 {
         display: none;
@@ -1389,10 +1391,10 @@ footer {
     }
 
     .card-page-6 {
-        min-width: 100%;
-        height: 100%;
+        width: 100%;
+        height: 110vh;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 20px;
     }
 
     .card-content-page-6 {

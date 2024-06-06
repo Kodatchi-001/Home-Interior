@@ -1,18 +1,26 @@
 //navbar-responsiv
 var log_navbar = document.querySelector('.header-content-1');
 var icone_navbar = document.querySelector('.icon-navbar-responsiv');
+var header =  document.querySelector('header')
 function navbar_top(icone) {
-    document.querySelector('header').style.height = '50vh';
-    log_navbar.style.height = '20%';
-    icone.parentNode.parentNode.style.height = '20%'
-    navbarcontent_link()
+    if(header.style.height == '50vh'){
+        header.style.height = '';
+        log_navbar.style.height = '';
+        icone.parentNode.parentNode.style.height = ''
+    }
+    else{
+        header.style.height = '50vh';
+        log_navbar.style.height = '20%';
+        icone.parentNode.parentNode.style.height = '20%'
+        navbarcontent_link()
+    }
 }
 
 function navbarcontent_link() {
     const navbarcontent_link = document.querySelectorAll('.content-navbar-responsiv a')
     navbarcontent_link.forEach(element => {
         element.addEventListener('click', function () {
-            document.querySelector('header').style.height = '9vh'
+            header.style.height = '9vh'
             log_navbar.style.height = '';
             icone_navbar.style.height = ''
         })
@@ -58,7 +66,7 @@ function moveSlide(direction) {
 //cards-question
 function cards_question() {
     var all_cards = document.querySelectorAll('.card-content-page-7');
-    var size = '28%';
+    var size = '30%';
     var height = '50%';
     var currentElement = null;
 
